@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  padding: 80px 0;
+}
+@media (max-width: 1023px) {
+  .container {
+    padding: 50px 0;
+  }
+}
+
+h2 {
+  border-bottom: 4px solid #000;
+  width: 60px;
+  padding-bottom: 4px;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar p {
+  font-size: 32px;
+  font-weight: 800;
+}
+.navbar #sobre {
+  display: flex;
+  gap: 12px;
+}
+.navbar #sobre a:hover {
+  border-bottom: 2px solid #000;
+}
+@media (max-width: 1023px) {
+  .navbar p {
+    font-size: 20px;
+  }
+}
+
+#hero .hero-text {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 120px;
+}
+#hero .hero-text hr {
+  width: 180px;
+  border: 2px solid #000;
+  margin-left: 280px;
+}
+#hero .hero-text p {
+  margin-top: 20px;
+}
+#hero .fadeLeft {
+  animation-name: fadeLeft;
+}
+@media (max-width: 767px) {
+  #hero hr {
+    display: none;
+  }
+}
+
+#projetos .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+#projetos .cards__card {
+  border: 1px solid rgba(46, 45, 45, 0.5294117647);
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+#projetos .cards__card .card-img {
+  border-radius: 8px;
+  max-width: 300px;
+}
+#projetos .cards__card .card-img img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#projetos .cards__card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#projetos .cards__card--ferramentas {
+  display: flex;
+  gap: 8px;
+}
+#projetos .cards__card:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 1023px) {
+  #projetos .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  #projetos .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#skills ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#skills li {
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+#skills li .bx {
+  font-size: 80px;
+}
+
+#contato ul {
+  display: flex;
+  gap: 20px;
+}
+#contato ul li {
+  transition: 0.3s ease;
+}
+#contato ul li .bx {
+  font-size: 40px;
+}
+#contato ul li:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styles.min.css.map */
